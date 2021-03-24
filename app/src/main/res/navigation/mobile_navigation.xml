@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_in">
+
+    <fragment
+        android:id="@+id/nav_in"
+        android:name="com.productivity.gtd.ui.in.InFragment"
+        android:label="@string/menu_in"
+        tools:layout="@layout/fragment_in" />
+
+    <fragment
+        android:id="@+id/nav_next_actions"
+        android:name="com.productivity.gtd.ui.next_actions.NextActionsFragment"
+        android:label="@string/menu_next_actions"
+        tools:layout="@layout/fragment_next_actions" />
+
+    <fragment
+        android:id="@+id/nav_projects"
+        android:name="com.productivity.gtd.ui.projects.ProjectsFragment"
+        android:label="@string/menu_projects"
+        tools:layout="@layout/fragment_projects" />
+</navigation>
